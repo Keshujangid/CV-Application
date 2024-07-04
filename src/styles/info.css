@@ -1,0 +1,168 @@
+.form-container > div {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
+p,input{
+  font-size: 1.2rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container > div button:active {
+  scale: 0.95;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+} */
+
+.form-container > div form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form-container > div form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container > div form textarea {
+  /* width: 100%; */
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container > div form input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container > div form input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container > div form textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container > div form button , .show-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: center;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  /* width: 40%; */
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container div form button:hover , .show-form:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.show-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-item , .graduation-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-toggle h2{
+ flex: 1;
+ margin-left: 10px;
+ 
+}
+
+.delete-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  background-color: rgb(255, 95, 95);
+  cursor: pointer;
+  border: 3px solid rgb(255, 201, 201);
+  transition-duration: 0.3s;
+}
+.bin-bottom , .delete-item>img>svg .bin-bottom{
+  width: 15px;
+}
+.bin-top {
+  width: 17px;
+  transform-origin: right;
+  transition-duration: 0.3s;
+}
+.delete-item:hover .bin-top {
+  transform: rotate(45deg);
+}
+.delete-item:hover {
+  background-color: rgb(255, 0, 0);
+}
+.delete-item:active {
+  transform: scale(0.9);
+}

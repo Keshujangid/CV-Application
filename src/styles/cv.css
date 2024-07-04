@@ -1,0 +1,61 @@
+div.contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cv-container>.about-me,
+.cv-container>.education,
+.cv-container>.experience,
+.skills {
+    border-bottom: 2px solid;
+}
+
+.cv-container{
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cv-container > header {
+    border-bottom: 2px solid;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 2rem 0;
+    row-gap: 1rem;
+    justify-items: center;
+}
+
+
+
+.cv-container h2 {
+    text-align: center;
+    background: #959da3;
+    margin-bottom: 1rem;
+}
+
+.cv-container>header>h1 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.cv-container header i {
+ padding-right: 10px;
+}
+
+.edu-detail,
+.job {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+}
+
+.edu-college {
+    font-weight: bold;
+}
+
+/* styles/App.css */
